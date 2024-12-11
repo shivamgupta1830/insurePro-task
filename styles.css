@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #121212;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  height: 80vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffab00;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  color: #ffab00;
+}
+
+#totalRevenue {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+pre {
+  background-color: #2d2d2d;
+  color: #d1d1d1;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 1rem;
+  overflow-x: auto;
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+pre#monthWiseTotals,
+pre#mostPopularItems,
+pre#mostRevenueItems,
+pre#popularityStats {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+#totalRevenue,
+h2,
+pre {
+  margin-bottom: 20px;
+}
